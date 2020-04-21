@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        COMP 3322 Email System
+    </title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body onload="onloadFunction()">
+    <script src="javascripts/script.js">
+        
+
+    </script>
+
+    <!-- HEADER -->
+
+    <header id="headerDivision">
+        Email System - Welcome John!
+    </header>
+    
+    <!-- FUNCTION BUTTONS -->
+
+    <nav>
+        <div class="navbar" >
+            <button onclick="compose()" class="dropbtn">Compose</button>
+        </div>
+
+        <div class="navbar" >
+            <button onclick="moveToOpen()" class="dropbtn"  >Move To</button>
+            <div id="myDropdown" class="navbar-content">
+                <a id="Important" onclick="moveEmail(this.id)">Important</a>
+                <a id="Sent" onclick="moveEmail(this.id)">Sent</a>
+                <a id="Trash" onclick="moveEmail(this.id)">Trash</a>
+            </div>
+        </div>
+
+        <div class="navbar" style="float:right">
+                <button class="dropbtn" onclick="previous()" > <-- </button>
+        
+                <button class="dropbtn" onclick="next()" > --> </button>
+        </div>
+    </nav>
+
+    
+    
+    <div class="row">
+        <!-- SIDEBAR -->
+
+        <div class="column left" id="mainNavDiv" style="background-color:rgb(250, 250, 250)">
+            <li><a id="Inbox"  class="btn active" onclick="selectedNav(this.id)">Inbox</a></li>
+            <li><a id="Important"  class="btn" onclick="selectedNav(this.id)">Important</a></li>
+            <li><a id="Sent"  class="btn" onclick="selectedNav(this.id)">Sent</a></li>
+            <li><a id="Trash"  class="btn" onclick="selectedNav(this.id)">Trash</a></li>
+        </div>
+        
+        <!-- DISPLAY EMAIL -->
+
+        <div id="emailDisplay" class="column right" style="background-color:rgb(255, 255, 255);">
+               
+        </div>
+    </div>
+    
+
+
+
+
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

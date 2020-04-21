@@ -1,0 +1,245 @@
+/* compose */
+.textarea {
+  width: 50%;
+  height: 10px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.textareacontent {
+  width: 70%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+div h4{
+  display: inline-block;
+}
+
+#time{
+  float: right;
+}
+
+span {
+  display: inline-block;
+}
+p{
+  display: inline-block;
+}
+
+
+/* MOVE TO - NAVBAR  CSS */
+.dropbtn {
+  background-color: #FC766AFF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #8b8b8b00;
+}
+
+.navbar {
+  padding:10px;
+  vertical-align:middle;
+  position: relative;
+  display: inline-block;
+}
+
+
+.navbar-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar-content a {
+  color: rgb(255, 87, 87);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/* END */
+
+/* MAIN */
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+  
+}
+
+.left {
+  width: 15%;
+  
+}
+
+.right{
+  width: 85%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* END */
+
+/* Main NavBar */
+
+#mainNavDiv {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.btn{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.active, .btn:hover {
+  background-color: #FC766AFF;
+  color: white;
+}
+
+/* li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+} */
+
+/* li a:hover, .active{
+  background-color: #555;
+  color: white;
+} */
+
+/* .btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+/*
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+} */
+/* END */
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color:  #FC766AFF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: rgb(248, 248, 248);
+  vertical-align: middle
+}
+
+#datalist {
+  align-content: center;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #FC766AFF;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
